@@ -2,7 +2,7 @@
 python = "3.13"
 java = "21"
 node = "22"
-
+go = "1.24"
 
 [tasks.run-python]
 description = "Python実行"
@@ -17,3 +17,18 @@ dir = "java"
 description = "Java実行"
 run = "./gradlew bootRun"
 dir = "java"
+
+[tasks.run-go]
+description = "Go実行"
+run = "go run main.go"
+dir = "go"
+
+[tasks.dev-ts-next]
+description = "Next.js開発サーバー起動"
+run = "npm run dev"
+dir = "typescript-next"
+
+[tasks.build-ts-next]
+description = "Next.jsビルド"
+run = "npm run build"
+dir = "typescript-next"
