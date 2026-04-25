@@ -1,6 +1,17 @@
 [tools]
 python = "3.13"
+java = "21"
 
 [tasks.run-python]
 description = "Python実行"
 run = "uv run python/main.py"
+
+[tasks.build-java]
+description = "Javaビルド"
+run = "./gradlew build"
+dir = "java"
+
+[tasks.run-java]
+description = "Java実行"
+run = "./gradlew bootRun"
+dir = "java"
