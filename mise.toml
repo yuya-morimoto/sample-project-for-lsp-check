@@ -1,6 +1,8 @@
 [tools]
 python = "3.13"
 java = "21"
+node = "22"
+
 
 [tasks.run-python]
 description = "Python実行"
