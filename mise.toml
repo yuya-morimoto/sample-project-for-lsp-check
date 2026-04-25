@@ -1,0 +1,6 @@
+[tools]
+python = "3.13"
+
+[tasks.run-python]
+description = "Python実行"
+run = "uv run python/main.py"
